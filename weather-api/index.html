@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+<div class="app">
+
+  <header class="top">
+    <input id="cityInput" placeholder="Search city (e.g. Pangasinan, London)" />
+    <button id="searchBtn">🔍</button>
+    <button id="unitToggle">°C</button>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <section class="current">
+    <img id="weatherIcon" alt="Weather icon" />
+    <div class="info">
+      <h1 id="temperature">--°</h1>
+      <p id="description">---</p>
+      <p id="dateTime">---</p>
+      <p id="humidity">Humidity: --%</p>
+    </div>
+  </section>
+
+  <section class="forecast" id="forecast"></section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

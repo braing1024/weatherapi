@@ -1,0 +1,65 @@
+# Weather App
+
+A modern, responsive weather application built with vanilla HTML, CSS, and JavaScript. It fetches real-time weather data from the OpenWeatherMap API, displaying current conditions and a 5-day forecast for any searched city. Features include unit toggling (Celsius/Fahrenheit), theme switching (dark/light), and automatic unit selection based on location.
+
+## Demo
+
+You can try the app by opening `index.html` in your web browser. Enter a city name (e.g., "Pangasinan" or "London") and search to view the weather.
+
+Note: The app uses a hardcoded API key for OpenWeatherMap. For production use, replace it with your own key to avoid rate limits.
+
+## Features
+
+- **City Search**: Search for weather by city name with autocomplete-like behavior (press Enter to search).
+- **Current Weather**: Displays temperature, description, humidity, date/time, and weather icon.
+- **5-Day Forecast**: Shows daily forecasts at noon, including temperature, humidity, and icons.
+- **Unit Toggle**: Switch between metric (°C, m/s) and imperial (°F, mph) units; auto-detects based on country (e.g., imperial for US).
+- **Theme Toggle**: Switch between dark (night) and light (day) modes.
+- **Animations**: Smooth fade-in animations for forecast cards.
+- **Responsive Design**: Adapts to desktop and mobile screens.
+- **Live Time Update**: Current date and time refresh every second.
+- **Error Handling**: Alerts if city is not found.
+
+## Installation
+
+1. Clone or download the repository.
+2. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) (free tier available).
+3. Replace the `API_KEY` in `script.js` with your own key.
+4. Open `index.html` in any modern web browser (e.g., Chrome, Firefox, Safari).
+
+No additional dependencies or setup required – it's pure vanilla web technologies!
+
+## Usage
+
+- Enter a city name in the search input and click the 🔍 button or press Enter.
+- Toggle units with the °C/°F button.
+- Switch themes with the 🌙/☀️ button.
+- View current weather details and scroll to see the forecast cards.
+
+Example: Search for "New York" – it will auto-use imperial units and display the weather.
+
+## Technologies Used
+
+- **HTML5**: Structure of the app interface.
+- **CSS3**: Styling, gradients, animations, and responsive layout with media queries implied via flexible design.
+- **JavaScript (ES6)**: API fetching, DOM manipulation, event handling, and logic for weather updates.
+- **OpenWeatherMap API**: For geolocation and weather forecast data.
+
+## Project Structure
+
+- `index.html`: Main HTML file containing the app layout.
+- `script.js`: JavaScript code for API interactions, updates, and event listeners.
+- `style.css`: CSS styles for layout, themes, and animations.
+
+## Limitations
+
+- Relies on a third-party API; may have rate limits with the provided key.
+- Forecast is limited to 5 days at noon intervals (filtered by "12:00:00").
+- No support for current location via geolocation API (manual city input only).
+- Does not handle advanced features like hourly forecasts, wind speed, or severe weather alerts.
+- Icons are fetched from OpenWeatherMap; may not load if API changes.
+- No offline support or caching.
+
+## License
+
+This project is open-source and available under the MIT License. Feel free to use, modify, or distribute it.
